@@ -1,10 +1,9 @@
 body {
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 10px 10px 10px;
-  color: #4f345a;
+  color: #581970;
 }
 h1 {
-  font-weight: bold;
   font-size: 35px;
 }
 h2 {
@@ -25,14 +24,13 @@ h4 {
 
 .container {
   padding: 10px 10px;
-  border: 2px solid #4f345a;
-  background-color: #f7d488;
+  border: 2px solid #661885;
+  background-color: #f8dc9f;
   border-radius: 10px;
   max-width: 600px;
 }
 .temperature {
   font-size: 40px;
-  font-weight: 700;
 }
 .units {
   position: relative;
