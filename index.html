@@ -20,30 +20,58 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>
-        <i class="fas fa-map-marker-alt"></i>
-        <span id="city">Vancouer</span>
-      </h1>
-      <h2 id="currentTime">Monday, 21:03</h2>
-      <h3>
-        <div class="row">
-          <div class="col-6">
-            <span class="temperature" id="temperature">20</span>
-            <span class="units">
-              <a href="#" id="celsius-link">°C</a>
-              | <a href="#" id="fahrenheit-link">°F</a>
-            </span>
-            <div class="feels">
-              <span>Feels like </span><span id="feels-like">20</span>
+    <div class="wrapper">
+      <div class="container">
+        <h1>
+          <i class="fas fa-map-marker-alt"></i>
+          <span id="city">Vancouer</span>
+        </h1>
+        <h2 id="currentTime">Monday, 21:03</h2>
+        <h3>
+          <div class="row">
+            <div class="col-6">
+              <span class="temperature" id="temperature">20</span>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a>
+                | <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+              <div class="feels">
+                <span>Feels like </span><span id="feels-like">20</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <img src="img/cloud.png" alt="" />
+              <span id="description">cloudy</span>
             </div>
           </div>
-          <div class="col-6">
-            <img src="img/cloud.png" alt="" />
-            <span id="description">cloudy</span>
+        </h3>
+        <h4>
+          <div class="row">
+            <div class="col-4">
+              Humidity
+              <div>68 %</div>
+            </div>
+
+            <div class="col-4">
+              Wind
+              <div>8 km/h</div>
+            </div>
+
+            <div class="col-4">
+              Pressure
+              <div>1013 mb</div>
+            </div>
           </div>
-        </div>
-      </h3>
+        </h4>
+      </div>
+      <small>
+        <a
+          href="https://github.com/wecodeschool/vanilla-weather-app"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Roxy Shabani
+      </small>
     </div>
   </body>
 </html>

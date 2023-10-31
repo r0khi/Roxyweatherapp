@@ -7,6 +7,21 @@ h1 {
   font-weight: bold;
   font-size: 35px;
 }
+h2 {
+  font-size: 30px;
+}
+h3 {
+  margin-left: 15px;
+}
+h4 {
+  padding: 25px 25px;
+  font-size: 15px;
+  text-align: center;
+}
+.wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
 
 .container {
   padding: 10px 10px;
@@ -15,8 +30,14 @@ h1 {
   border-radius: 10px;
   max-width: 600px;
 }
+.temperature {
+  font-size: 40px;
+  font-weight: 700;
+}
 .units {
-  font-size: 15px;
+  position: relative;
+  top: -18px;
+  font-size: 14px;
 }
 .feels {
   font-size: 15px;
