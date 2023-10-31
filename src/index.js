@@ -2,10 +2,19 @@ function displayTemperature(response) {
   console.log(response);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
-  let description = document.querySelector("#description");
+  let descriptionElement = document.querySelector("#description");
+  let feelsElement = document.querySelector("#feels-like");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let pressureElement = document.querySelector("#pressure");
+
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
-  description.innerHTML = response.data.condition.description;
+  descriptionElement.innerHTML = response.data.condition.description;
+  feelsElement.innerHTML = Math.round(response.data.temperature.feels_like);
+  humidityElement.innerHTML = response.data.temperature.humidity;
+  windElement.innerHTML = response.data.wind.speed;
+  pressureElement.innerHTML = response.data.temperature.pressure;
 }
 
 let apiKey = "f653abacd4cab34te0c9862o3263441a";
