@@ -1,0 +1,23 @@
+body {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  margin: 10px 10px 10px;
+  color: #4f345a;
+}
+h1 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.container {
+  padding: 10px 10px;
+  border: 2px solid #4f345a;
+  background-color: #f7d488;
+  border-radius: 10px;
+  max-width: 600px;
+}
+.units {
+  font-size: 15px;
+}
+.feels {
+  font-size: 15px;
+}
