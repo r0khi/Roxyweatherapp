@@ -13,7 +13,7 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.condition.description;
   feelsElement.innerHTML = Math.round(response.data.temperature.feels_like);
   humidityElement.innerHTML = response.data.temperature.humidity;
-  windElement.innerHTML = response.data.wind.speed;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
   pressureElement.innerHTML = response.data.temperature.pressure;
 }
 
