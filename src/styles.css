@@ -46,3 +46,21 @@ h4 {
 .feels {
   font-size: 15px;
 }
+.search-form-input {
+  background-color: #f4c3c2;
+  border: none;
+  border-radius: 5px;
+  width: 60%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline-color: #f4c3c2;
+}
+.search-form-button {
+  background: #f1b5cb;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  color: rgb(122, 122, 122);
+  font-size: 16px;
+}
