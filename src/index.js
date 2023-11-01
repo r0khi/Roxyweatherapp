@@ -34,3 +34,15 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+//
+
+let currentDate = new Date();
+let options = {
+  weekday: "long",
+  hour: "2-digit",
+  hour12: false,
+  minute: "2-digit",
+};
+let date = currentDate.toLocaleDateString("en-us", options);
+let rightnow = `${date}`;
+document.getElementById("currentTime").innerHTML = rightnow;
