@@ -16,19 +16,20 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   pressureElement.innerHTML = response.data.temperature.pressure;
 }
-
-let apiKey = "f653abacd4cab34te0c9862o3263441a";
-let query = "Paris";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${apiKey}&units=metric`;
-
-axios.get(apiUrl).then(displayTemperature);
 //
 //
+function searchCity(city) {
+  let apiKey = "f653abacd4cab34te0c9862o3263441a";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
   let cityElement = document.querySelector("#city");
   cityElement = searchInput.value;
+  searchCity(searchInput.value);
 }
 
 let searchFormElement = document.querySelector("#search-form");
