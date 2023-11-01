@@ -7,7 +7,16 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let pressureElement = document.querySelector("#pressure");
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  let options = {
+    weekday: "long",
+    hour: "2-digit",
+    hour12: false,
+    minute: "2-digit",
+  };
 
+  timeElement.innerHTML = `${date.toLocaleDateString("en-us", options)}`;
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
@@ -34,15 +43,6 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+searchCity("Vancouver");
 //
-
-let currentDate = new Date();
-let options = {
-  weekday: "long",
-  hour: "2-digit",
-  hour12: false,
-  minute: "2-digit",
-};
-let date = currentDate.toLocaleDateString("en-us", options);
-let rightnow = `${date}`;
-document.getElementById("currentTime").innerHTML = rightnow;
+//
