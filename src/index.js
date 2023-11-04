@@ -10,6 +10,7 @@ function displayTemperature(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   let options = {
+    hourCycle: "h23",
     weekday: "long",
     hour: "2-digit",
     hour12: false,
