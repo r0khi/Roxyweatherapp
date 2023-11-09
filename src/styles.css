@@ -18,10 +18,10 @@ h3 {
   font-size: 20px;
 }
 h4 {
-  padding: 25px 25px;
+  padding: 35px 31px;
   font-size: 15px;
   text-align: center;
-  margin-left: -18px;
+  margin-left: -30px;
 }
 header {
   padding: 0 0 25px 0;
@@ -96,4 +96,22 @@ input:active {
 .weather-details {
   color: #923696;
   font-weight: 600;
+}
+.img-desc {
+  position: relative;
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 1px;
+  margin-top: -20px;
+  margin-left: -40px;
+  width: 120px;
+  text-align: center;
 }
