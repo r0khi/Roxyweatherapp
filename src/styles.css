@@ -103,8 +103,11 @@ input:active {
   margin-top: 20px;
 }
 .weather-app-icon {
-  vertical-align: middle;
-  margin-top: -20px;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  margin-top: -30px;
+  margin-left: -55px;
 }
 
 .description {
