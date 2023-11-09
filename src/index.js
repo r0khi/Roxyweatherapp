@@ -9,15 +9,7 @@ function displayTemperature(response) {
   let pressureElement = document.querySelector("#pressure");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
-  let options = {
-    hourCycle: "h23",
-    weekday: "long",
-    hour: "2-digit",
-    hour12: false,
-    minute: "2-digit",
-  };
-
-  timeElement.innerHTML = `${date.toLocaleDateString("en-us", options)}`;
+  //
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
@@ -25,6 +17,28 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   pressureElement.innerHTML = response.data.temperature.pressure;
+  timeElement.innerHTML = formatDate(date);
+}
+//
+function formatDate(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${day} ${hours}:${minutes}`;
 }
 //
 //
