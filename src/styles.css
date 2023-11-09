@@ -76,7 +76,7 @@ footer {
 }
 input:active {
   color: #e2c2fd;
-  background: #533a71;
+  background: #9f84bd;
   transition: background 0.5s linear 0s;
 }
 .search-form-button {
